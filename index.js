@@ -18,7 +18,7 @@ var guilds = {};
 
 client.login(discord_token);
 
-client.on('messafge', function(message) {
+client.on('message', function(message) {
     const member = message.member;
     const mess = message.content.toLowerCase();
     const args = message.content.split(' ').slice(1).join(" ");
